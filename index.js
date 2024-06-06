@@ -10,8 +10,8 @@ app.use('/', misrutas); //usar las rutas
 
 app.use(express.static(process.cwd() + '/public/'));
 
-app.listen(port, function() {
-    console.log(`Servidor corriendo en `, port);
+app.listen(port, () => {
+    console.log(`Servidor corriendo en http://localhost:${port}`);
 })
 
    
